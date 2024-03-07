@@ -22,12 +22,13 @@ body {
   padding: 4rem;
   font-weight: 500;
   font-style: normal;
+  font-size: 4rem;
   /* background-color: var();
   color: var(); */
 }
 
 h1 {
-  font-size: 3.2em;
+  /* font-size: 1em; */
   line-height: 1.1;
 }
 
