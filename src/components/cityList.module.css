@@ -21,6 +21,10 @@
     background-color: #508089;
 }
 
+.city-el__active {
+    border: 2px solid #eee8a9;
+}
+
 .delete-btn {
     display: flex;
     align-self:;

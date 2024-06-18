@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 import styles from "./cityList.module.css";
 import deleteSVG from "../assets/delete.svg";
+import { useCities } from "../contexts/CitiesContext";
 
-function CountryList({ cities }) {
+function CountryList() {
+  const {cities} = useCities();
+
   return (
     <ul className={styles["city-list"]}>
       {cities.map((city) => (

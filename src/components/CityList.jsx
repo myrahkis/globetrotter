@@ -2,8 +2,11 @@
 import styles from "./cityList.module.css";
 import deleteSVG from "../assets/delete.svg";
 import { Link } from "react-router-dom";
+import { useCities } from "../contexts/CitiesContext";
 
-function CityList({ cities }) {
+function CityList() {
+  const { cities } = useCities();
+
   return (
     <ul className={styles["city-list"]}>
       {cities.map((city) => (
@@ -14,9 +17,16 @@ function CityList({ cities }) {
 }
 
 function City({ city }) {
+  const { currentCity } = useCities();
+
   return (
     <li>
-      <Link to={`${city.id}?lat=${city.position.lat}&lng=${city.position.lng}`} className={styles["city-el"]}>
+      <Link
+        to={`${city.id}?lat=${city.position.lat}&lng=${city.position.lng}`}
+        className={`${styles["city-el"]} ${
+          city.id === currentCity.id && styles["city-el__active"]
+        }`}
+      >
         <p>{city.emoji}</p>
         <p>{city.cityName}</p>
         <p>{city.country}</p>
