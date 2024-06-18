@@ -1,9 +1,23 @@
 import React from "react";
+import styles from "./home.module.css";
+import NavBar from "../components/NavBar";
 
 function Home() {
   return (
     <>
-      <h1>Home</h1>
+      <NavBar />
+      <div className={styles["background-img"]}></div>
+      <div className={styles["container"]}>
+        <h2>
+          Globetrotter? <br /> Make your adventures{" "}
+          <i className={styles["yellow"]}>memorable</i>.
+        </h2>
+        <p className={styles["desc"]}>
+          Never forget your wonderful experiences, and show everyone how you
+          have wandered the world.
+        </p>
+        <button className={styles["home-btn"]}>START TRACKING NOW</button>
+      </div>
     </>
   );
 }

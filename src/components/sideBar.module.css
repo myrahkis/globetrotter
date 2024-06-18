@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 3rem 5rem 3.5rem 5rem;
+  background-color: #28535a;
+  width: 50%;
+  align-items: center;
+  height: calc(100vh - 4.8rem);
+  border-radius: 3.5rem;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer {
+  margin-top: auto;
+  font-size: 1.5rem;
+  color: #95b0b5;
+}

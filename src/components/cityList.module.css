@@ -1,0 +1,30 @@
+.city-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color:rgb(194, 194, 194);
+    gap: 1rem;
+}
+
+.city-el {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    background-color: #436d74;
+}
+.city-el:hover {
+    background-color: #508089;
+}
+
+.delete-btn {
+    display: flex;
+    align-self:;
+    padding: 0.4rem;
+    background-color: #28535a;
+}
+.delete-btn:hover {
+    background-color: #A83200;
+}

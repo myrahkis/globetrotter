@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 /* :root {
   --color-lightest: ;
   --color-darkest: ;
-  --color-main: ;
-  --color-succs: ;
-  --color-worning: ;
+  --color-main: #436d74;
+  --color-succs: #007e5e; или #59aa96 или #6f8a56
+  --color-danger: #a24000;
+  --color-emphasis: #eee8a9;
 } */
 
 * {
@@ -14,15 +17,17 @@
 
 html {
   font-size: 60%;
-  /* font-family: ; */
+  font-family: "Caudex", serif;
 }
 
 body {
+  font-weight: 400;
   min-height: 100vh;
-  padding: 4rem;
+  /* padding: 4rem; */
   font-weight: 500;
   font-style: normal;
   font-size: 4rem;
+  background-color: #436d74;
   /* background-color: var();
   color: var(); */
 }
@@ -32,17 +37,29 @@ h1 {
   line-height: 1.1;
 }
 
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
 button {
   cursor: pointer;
+  width: fit-content;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 1rem 2rem;
+  align-self: center;
+  font-size: 2rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
-  transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  transform: scale(0.98);
+  transition: all 0.15s ease-in;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.5rem;
 }

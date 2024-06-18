@@ -1,0 +1,30 @@
+.nav {
+  width: fit-content;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  background-color: #436d74;
+  border-radius: 2.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+}
+
+.list__link {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  padding: 0.5rem 1.5rem;
+  background-color: #436d74;
+  border-radius: 2.5rem;
+}
+.list__link:hover {
+  background-color: #508089;
+}
+
+.nav :global(.active) {
+  transition: background-color 0.2s ease-in;
+  padding: 0.5rem 1.5rem;
+  color: #0a3a40;
+  background-color: #eee8a9;
+}
