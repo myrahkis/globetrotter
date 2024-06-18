@@ -3,17 +3,19 @@
     flex-direction: column;
     font-size: 2rem;
     margin-top: 1.5rem;
-    color:rgb(194, 194, 194);
     gap: 1rem;
 }
 
 .city-el {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
     padding: 0.5rem 2rem;
     border-radius: 2rem;
     background-color: #436d74;
+    color:rgb(194, 194, 194);
+    text-decoration: none;
 }
 .city-el:hover {
     background-color: #508089;

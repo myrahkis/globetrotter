@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 1rem;
+    width: 40rem;
+    font-size: 2.5rem;
+    color: rgb(194, 194, 194);
+    background-color: #436d74;
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.city-name-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.notes-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.btns-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-btn {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.input {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    max-width: 35rem;
+    max-height: 18rem;
+}
+.input:focus {
+    outline: 0.2rem ridge #eee8a9;
+}

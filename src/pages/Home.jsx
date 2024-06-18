@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./home.module.css";
 import NavBar from "../components/NavBar";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+  
   return (
     <>
       <NavBar />
@@ -16,7 +19,7 @@ function Home() {
           Never forget your wonderful experiences, and show everyone how you
           have wandered the world.
         </p>
-        <button className={styles["home-btn"]}>START TRACKING NOW</button>
+        <button className={styles["home-btn"]} onClick={() => navigate('app')}>START TRACKING NOW</button>
       </div>
     </>
   );
