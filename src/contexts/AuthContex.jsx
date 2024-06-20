@@ -26,7 +26,7 @@ function AuthProvider({ children }) {
   }
 
   function logout() {
-    setUser({});
+    setUser(null);
     setIsAuthenticated(false);
   }
 
