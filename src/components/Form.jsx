@@ -7,7 +7,10 @@ import { useCities } from "../contexts/CitiesContext";
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function convertToEmoji(countryCode) {
-  const codePoints = countryCode.toUpperCase().split('').map((char) => 127397 + char.charCodeAt());
+  const codePoints = countryCode
+    .toUpperCase()
+    .split("")
+    .map((char) => 127397 + char.charCodeAt());
 
   return String.fromCodePoint(...codePoints);
 }
@@ -18,7 +21,7 @@ function Form() {
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
   const [notes, setNotes] = useState("");
-  const [emoji, setEmoji] = useState('');
+  const [emoji, setEmoji] = useState("");
   const [lat, lng] = useUrlPosition();
   const [geocodingError, setGeocodingError] = useState("");
 
@@ -60,11 +63,11 @@ function Form() {
       country,
       emoji,
       notes,
-      position: {lat, lng},
-    }
+      position: { lat, lng },
+    };
 
     addNewCity(newCity);
-    navigate('/app/cities');
+    navigate("/app/cities");
   }
 
   if (!lat & !lng) return <h5>Click on the map to choose visited city!</h5>;
@@ -77,12 +80,15 @@ function Form() {
     <form className={styles["form"]} onSubmit={handleSubmit}>
       <div className={styles["city-name-wrapper"]}>
         <label>City name</label>
-        <input
-          id="cityName"
-          onChange={(e) => setCityName(e.target.value)}
-          value={cityName}
-          className={styles["input"]}
-        />
+        <div>
+          <input
+            id="cityName"
+            onChange={(e) => setCityName(e.target.value)}
+            value={cityName}
+            className={styles["input"]}
+          />
+          <span className={styles['emoji']}>{emoji}</span>
+        </div>
       </div>
       <div className={styles["notes-wrapper"]}>
         <label>Your thoughts</label>
@@ -94,7 +100,9 @@ function Form() {
         />
       </div>
       <div className={styles["btns-wrapper"]}>
-        <button type="submit" className={styles["form-btn"]}>Add</button>
+        <button type="submit" className={styles["form-btn"]}>
+          Add
+        </button>
         <button
           onClick={(e) => {
             e.preventDefault();

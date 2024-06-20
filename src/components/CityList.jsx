@@ -3,6 +3,7 @@ import styles from "./cityList.module.css";
 import deleteSVG from "../assets/delete.svg";
 import { Link } from "react-router-dom";
 import { useCities } from "../contexts/CitiesContext";
+import { WidthIcon } from "@radix-ui/react-icons";
 
 function CityList() {
   const { cities } = useCities();
@@ -17,7 +18,14 @@ function CityList() {
 }
 
 function City({ city }) {
-  const { currentCity } = useCities();
+  const { currentCity, deleteCity } = useCities();
+
+  function deleteHandle(e) {
+    e.preventDefault();
+
+    if (window.confirm(`Do you really want to delete ${city.cityName}?`))
+      deleteCity(city.id);
+  }
 
   return (
     <li>
@@ -30,7 +38,10 @@ function City({ city }) {
         <p>{city.emoji}</p>
         <p>{city.cityName}</p>
         <p>{city.country}</p>
-        <button className={styles["delete-btn"]}>
+        <button
+          className={styles["delete-btn"]}
+          onClick={(e) => deleteHandle(e)}
+        >
           <img src={deleteSVG} alt="delete" />
         </button>
       </Link>

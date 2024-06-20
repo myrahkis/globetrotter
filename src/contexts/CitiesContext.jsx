@@ -38,10 +38,10 @@ function CitiesProvider({ children }) {
   async function addNewCity(newCity) {
     try {
       const res = await fetch(`${BASE_URL}/cities`, {
-        method: 'POST',
+        method: "POST",
         body: JSON.stringify(newCity),
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
       });
       const data = await res.json();
@@ -52,8 +52,29 @@ function CitiesProvider({ children }) {
     }
   }
 
+  async function deleteCity(id) {
+    try {
+      await fetch(`${BASE_URL}/cities/${id}`, {
+        method: "DELETE",
+      });
+
+      setCities((cities) => cities.filter((city) => city.id !== id));
+    } catch {
+      alert("There was an error deleting a city!!");
+    }
+  }
+
   return (
-    <CitiesContext.Provider value={{ cities, isLoading, currentCity, getCity, addNewCity }}>
+    <CitiesContext.Provider
+      value={{
+        cities,
+        isLoading,
+        currentCity,
+        getCity,
+        addNewCity,
+        deleteCity,
+      }}
+    >
       {children}
     </CitiesContext.Provider>
   );
@@ -68,4 +89,4 @@ function useCities() {
   return context;
 }
 
-export { CitiesProvider, useCities, };
+export { CitiesProvider, useCities };
