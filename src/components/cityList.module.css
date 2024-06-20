@@ -1,9 +1,18 @@
 .city-list {
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     font-size: 2rem;
     margin-top: 1.5rem;
+    padding: 0 1.5rem;
     gap: 1rem;
+    max-height: 50rem;
+
+    /* scroll bar */
+    scrollbar-color: #508089 #28535a;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable both-edges;
 }
 
 .city-el {

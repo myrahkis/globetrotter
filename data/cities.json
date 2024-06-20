@@ -10,7 +10,7 @@
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
@@ -22,7 +22,7 @@
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -34,7 +34,84 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "id": "a30d",
+      "cityName": "Minsk",
+      "country": "Belarus",
+      "emoji": "🇧🇾",
+      "notes": "The best city ever!!",
+      "position": {
+        "lat": "53.90254987191292",
+        "lng": "27.560164620876233"
+      }
+    },
+    {
+      "id": "ae7d",
+      "cityName": "Sofia",
+      "country": "Bulgaria",
+      "emoji": "🇧🇬",
+      "notes": "Don't rememver:(",
+      "position": {
+        "lat": "42.70086450278109",
+        "lng": "23.331582317235203"
+      }
+    },
+    {
+      "id": "5e9a",
+      "cityName": "Athens",
+      "country": "Greece",
+      "emoji": "🇬🇷",
+      "notes": "Kinda dirty but pretty in the city center.",
+      "position": {
+        "lat": "37.936981983062864",
+        "lng": "23.738993228774383"
+      }
+    },
+    {
+      "id": "3a32",
+      "cityName": "Chekhov",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "notes": "Very cool!",
+      "position": {
+        "lat": "55.141573215262525",
+        "lng": "37.452892616230045"
+      }
+    },
+    {
+      "id": "13b5",
+      "cityName": "Vorkuta",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "notes": "Extremely cold!!",
+      "position": {
+        "lat": "67.50860077260025",
+        "lng": "64.07049025065935"
+      }
+    },
+    {
+      "id": "4aea",
+      "cityName": "Tokyo",
+      "country": "Japan",
+      "emoji": "🇯🇵",
+      "notes": "Sakura is so pretty!!",
+      "position": {
+        "lat": "35.70348823171829",
+        "lng": "139.76795448397738"
+      }
+    },
+    {
+      "id": "faeb",
+      "cityName": "Kathmandu",
+      "country": "Nepal",
+      "emoji": "🇳🇵",
+      "notes": "Everest is so pretty!!",
+      "position": {
+        "lat": "27.704002281313475",
+        "lng": "85.34179687500001"
+      }
     }
   ]
 }
