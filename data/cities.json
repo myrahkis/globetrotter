@@ -99,6 +99,17 @@
         "lat": "42.28850818988262",
         "lng": "18.841806164713358"
       }
+    },
+    {
+      "id": "2ee9",
+      "cityName": "Antananarivo",
+      "country": "Madagascar",
+      "emoji": "🇲🇬",
+      "notes": "Gbvkjekfebkf",
+      "position": {
+        "lat": "-18.915779905272483",
+        "lng": "47.51302561522035"
+      }
     }
   ]
 }

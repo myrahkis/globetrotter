@@ -3,7 +3,6 @@ import styles from "./cityList.module.css";
 import deleteSVG from "../assets/delete.svg";
 import { Link } from "react-router-dom";
 import { useCities } from "../contexts/CitiesContext";
-import { WidthIcon } from "@radix-ui/react-icons";
 
 function CityList() {
   const { cities } = useCities();

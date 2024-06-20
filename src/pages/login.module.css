@@ -1,0 +1,41 @@
+.background-img {
+  position: relative;
+  background-image: url("../assets/background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  filter: blur(0.25rem);
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 3rem;
+  top: 50%;
+  left: 50%;
+  padding: 5rem 3rem;
+  transform: translate(-50%, -55%);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 3px solid rgb(194, 194, 194);
+  color: rgb(194, 194, 194);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.input {
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+}
+
+.login-btn {
+  align-self: flex-end;
+  margin-top: 1.5rem;
+}

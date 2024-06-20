@@ -1,0 +1,27 @@
+.container {
+    position: absolute;
+    z-index: 999;
+    right: -1rem;
+    display: flex;
+    font-size: 1.6rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 2.5rem;
+    background-color: #28535a;
+    box-shadow: 5px 3px 3px #22484e;
+    border-radius: 1.5rem;
+    color: rgb(194, 194, 194);
+}
+
+.ava {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+}
+
+.logout-btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+}
