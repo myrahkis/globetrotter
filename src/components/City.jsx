@@ -11,13 +11,13 @@ function City() {
     function () {
       getCity(id);
     },
-    [id]
+    [id, getCity]
   );
 
   return (
     <div className={styles["container"]}>
       <div className={styles["wrapper"]}>
-        <h6 className={styles['header']}>CITY NAME</h6>
+        <h6 className={styles["header"]}>CITY NAME</h6>
         <div className={styles["wrapper__name"]}>
           <p>{currentCity.emoji}</p>
           <p>{currentCity.cityName}</p>
@@ -25,17 +25,17 @@ function City() {
       </div>
       {currentCity.notes && (
         <div className={styles["wrapper"]}>
-          <h6 className={styles['header']}>YOUR THOUGHTS</h6>
+          <h6 className={styles["header"]}>YOUR THOUGHTS</h6>
           <p>{currentCity.notes}</p>
         </div>
       )}
       <div className={styles["wrapper"]}>
-        <h6 className={styles['header']}>LEARN MORE</h6>
+        <h6 className={styles["header"]}>LEARN MORE</h6>
         <a
           href={`https://ru.wikipedia.org/wiki/${currentCity.cityName}`}
           target="_blank"
           rel="noreferrer"
-          className={styles['link']}
+          className={styles["link"]}
         >
           Check out {currentCity.cityName} on Wikipedia &rarr;
         </a>
